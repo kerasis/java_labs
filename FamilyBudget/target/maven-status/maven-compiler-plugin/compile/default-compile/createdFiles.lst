@@ -1,0 +1,7 @@
+com\test\familybudget\controller\CategoryController.class
+com\test\familybudget\database\Database.class
+com\test\familybudget\controller\MainController.class
+com\test\familybudget\Launcher.class
+com\test\familybudget\model\Category.class
+com\test\familybudget\FamilyBudgetApplication.class
+com\test\familybudget\model\Transaction.class
