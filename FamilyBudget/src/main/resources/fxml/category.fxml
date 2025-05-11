@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.test.familybudget.controller.CategoryController"
+      spacing="10">
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <HBox spacing="10">
+        <VBox spacing="5">
+            <Label text="Название:"/>
+            <TextField fx:id="nameField" promptText="Введите название"/>
+            
+            <Label text="Тип:"/>
+            <ComboBox fx:id="typeComboBox" promptText="Выберите тип"/>
+            
+            <HBox spacing="5">
+                <Button fx:id="addButton" text="Добавить" onAction="#addCategory"/>
+                <Button fx:id="deleteButton" text="Удалить" onAction="#deleteCategory"/>
+            </HBox>
+        </VBox>
+        
+        <TableView fx:id="categoryTable" prefWidth="300">
+            <columns>
+                <TableColumn fx:id="nameColumn" text="Название" prefWidth="150"/>
+                <TableColumn fx:id="typeColumn" text="Тип" prefWidth="150"/>
+            </columns>
+        </TableView>
+    </HBox>
+</VBox> 
